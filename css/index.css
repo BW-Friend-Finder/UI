@@ -252,8 +252,9 @@ h3 {
   flex-direction: column;
   background-color: #3A7BD5;
 }
-.home .section-2 .column-1 {
+.home .section-2 .group-1 {
   display: flex;
+  padding: 10rem 18rem;
 }
 .home .section-2 h1 {
   color: #FFF6EF;
