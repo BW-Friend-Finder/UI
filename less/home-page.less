@@ -101,15 +101,116 @@
 //}// home
 
 .home {
-  .page-nav {
-    display: flex;
-    justify-content: space-between;
-    .nav-items {
+  .content-header {
+
+    background-color: @tannish-background;
+
+    .page-nav {
       display: flex;
       justify-content: space-between;
-      a {
-        margin-right: 5rem;
+      padding-top: 3rem;
+
+      .logo {
+        margin-left: 5rem;
+        align-items: center;
+        //margin-top: -.5rem; //Trying to center it with the nav items
       }
+
+      .nav-items {
+        display: flex;
+        justify-content: space-between;
+
+        a {
+          margin-right: 5rem;
+        }
+      }
+    } //page-nav
+
+    .header-intro {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .header-intro-text {
+        margin-left: 5rem;
+        h1 {
+          color: @bluish;
+        }
+        span {
+          color: @reddish;
+        }
+        h3 {
+          color: @bluish;
+        }
+        button {
+          background-color: @reddish;
+          color: @whitish;
+          width: 18.6rem;
+          height: 5.3rem;
+          font-size: 3.6rem;
+          border-radius: 50px;
+          &:hover {
+            background-color: @bluish;
+            color: black;
+          }
+        }
+      }
+      .header-intro-img {
+        margin-top: 8rem;
+        margin-right: 3rem;
+      }
+    } //header-intro
+  } //content-header
+
+  .section-1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 10rem 18rem;
+    .text-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 10rem;
+      .text-content-1 {
+        .something;
+        h2 {
+          margin-bottom: 1rem;
+        }
+        p {
+          margin-bottom: 5rem;
+        }
+      }
+      .text-content-2 {
+        .something;
+        h2 {
+          margin-bottom: 1rem;
+        }
+      }
+
     }
+  } //section-1
+
+  .section-2 {
+    display: flex;
+    flex-direction: column;
+    background-color: @bluish-background;
+    .column-1 {
+      display: flex;
+    }
+    h1 {
+      color: @whitish;
+    }
+    h3 {
+      color: @whitish;
+    }
+  } //section-2
+} //home
+footer {
+  background-color: @tannish-background;
+  text-align: center;
+  p {
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+    color: @reddish;
   }
-}
+} //footer
