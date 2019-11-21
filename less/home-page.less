@@ -68,26 +68,30 @@
   } //section-1
 
   .section-2 {
-    display: inline;
-    flex-direction: column;
     background-color: @bluish-background;
+    padding: 10rem 15rem;
     .group-1 {
       display: flex;
-      padding: 10rem 18rem;
+      position: relative;
       .subgroup-1 {
-        margin-right: -5rem;
+        position: absolute;
+        top: 2rem;
         .item-1 {
-
+          position: relative;
         }
         .item-2 {
-
+          position: absolute;
+          top: 15rem;
         }
       }
       .item-3 {
-
+        position: relative;
+        left: 46rem;
       }
       .item-4 {
-
+        position: relative;
+        left: 10rem;
+        top: 2rem;
       }
     }
     h1 {
