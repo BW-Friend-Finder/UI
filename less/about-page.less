@@ -2,50 +2,27 @@
   .content-header-about {
 
     background-color: @tannish-background;
-
-    .header-intro {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-      .header-intro-text {
-        margin-left: 5rem;
-        h1 {
-          color: @bluish;
-        }
-        span {
-          color: @reddish;
-        }
-        h3 {
-          color: @bluish;
-        }
-        button {
-          background-color: @reddish;
-          color: @whitish;
-          width: 18.6rem;
-          height: 5.3rem;
-          font-size: 3.6rem;
-          border-radius: 50px;
-          &:hover {
-            background-color: @bluish;
-            color: black;
-          }
-        }
-      }
-      .header-intro-img {
-        margin-top: 8rem;
-        margin-right: 3rem;
-      }
-    } //header-intro
+    position: relative;
+    .header-img {
+      position: relative;
+      top: 15rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   } //content-header
 
   .middle-section {
+    margin-top: 30rem;
+    margin-bottom: 17.5rem;
     .text-content-about {
+      text-align: center;
       h2 {
         color: @reddish;
+        margin-bottom: 2rem;
       }
       p {
-
+        margin: 0 auto;
+        width: 49%;
       }
     }
   }

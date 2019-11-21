@@ -296,42 +296,28 @@ footer p {
 }
 .about .content-header-about {
   background-color: #FFF6EF;
+  position: relative;
 }
-.about .content-header-about .header-intro {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.about .content-header-about .header-img {
+  position: relative;
+  top: 15rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
-.about .content-header-about .header-intro .header-intro-text {
-  margin-left: 5rem;
+.about .middle-section {
+  margin-top: 30rem;
+  margin-bottom: 17.5rem;
 }
-.about .content-header-about .header-intro .header-intro-text h1 {
-  color: #3A7BD5;
-}
-.about .content-header-about .header-intro .header-intro-text span {
-  color: #FC6767;
-}
-.about .content-header-about .header-intro .header-intro-text h3 {
-  color: #3A7BD5;
-}
-.about .content-header-about .header-intro .header-intro-text button {
-  background-color: #FC6767;
-  color: #FFF6EF;
-  width: 18.6rem;
-  height: 5.3rem;
-  font-size: 3.6rem;
-  border-radius: 50px;
-}
-.about .content-header-about .header-intro .header-intro-text button:hover {
-  background-color: #3A7BD5;
-  color: black;
-}
-.about .content-header-about .header-intro .header-intro-img {
-  margin-top: 8rem;
-  margin-right: 3rem;
+.about .middle-section .text-content-about {
+  text-align: center;
 }
 .about .middle-section .text-content-about h2 {
   color: #FC6767;
+  margin-bottom: 2rem;
+}
+.about .middle-section .text-content-about p {
+  margin: 0 auto;
+  width: 49%;
 }
 .about .team-section {
   background-color: #3A7BD5;
