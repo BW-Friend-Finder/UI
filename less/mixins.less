@@ -9,21 +9,23 @@
 //  border-radius: @bd-rad;
 //}
 //
-//.mobile-query(@col) {
-//  @media @mobile {
-//    display: flex;
-//    flex-direction: @col;
-//  }
-//}
-//
-//.mobile-size(@width, @padding, @margin, @t-align) {
-//  @media @mobile {
-//    width: @width;
-//    padding: @padding;
-//    margin: @margin;
-//    text-alignment: @t-align;
-//  }
-//}
+
+.mobile-query(@col, @content, @position) {
+  @media @mobile {
+    display: flex;
+    flex-direction: @col;
+    @content: @position;
+  }
+}
+
+.mobile-size(@width, @padding, @margin, @t-align) {
+  @media @mobile {
+    width: @width;
+    padding: @padding;
+    margin: @margin;
+    text-alignment: @t-align;
+  }
+}
 
 .something() {
   h2 {
@@ -35,6 +37,6 @@
   }
 }
 
-//.padding(@top-bottom, @left-right) {
+//.myPad(@top-bottom, @left-right) {
 //  padding: @top-bottom @left-right;
 //}
