@@ -200,6 +200,15 @@ h3 {
     margin: 0 auto;
   }
 }
+footer {
+  background-color: #FFF6EF;
+  text-align: center;
+}
+footer p {
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+  color: #FC6767;
+}
 @media (max-width: 500px) {
   .home .remove-on-mobile {
     display: none;
@@ -220,6 +229,11 @@ h3 {
 }
 .home .content-header .header-intro .header-intro-text h1 {
   color: #3A7BD5;
+}
+@media (max-width: 500px) {
+  .home .content-header .header-intro .header-intro-text h1 {
+    line-height: 6rem;
+  }
 }
 .home .content-header .header-intro .header-intro-text span {
   color: #FC6767;
@@ -318,9 +332,19 @@ h3 {
   background-color: #3A7BD5;
   padding: 10rem 15rem;
 }
+@media (max-width: 500px) {
+  .home .section-2 {
+    padding: 10rem 3rem;
+  }
+}
 .home .section-2 .group-1 {
   display: flex;
   position: relative;
+}
+@media (max-width: 500px) {
+  .home .section-2 .group-1 {
+    display: none;
+  }
 }
 .home .section-2 .group-1 .subgroup-1 {
   position: absolute;
@@ -347,17 +371,24 @@ h3 {
 .home .section-2 h1 {
   color: #FFF6EF;
 }
+@media (max-width: 500px) {
+  .home .section-2 h1 {
+    line-height: 6rem;
+    margin-bottom: 2rem;
+  }
+}
 .home .section-2 h3 {
   color: #FFF6EF;
 }
-footer {
-  background-color: #FFF6EF;
-  text-align: center;
+.home .section-2 .group-2 {
+  display: none;
 }
-footer p {
-  padding-top: 5rem;
-  padding-bottom: 4rem;
-  color: #FC6767;
+@media (max-width: 500px) {
+  .home .section-2 .group-2 {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
 }
 .about .content-header-about {
   background-color: #FFF6EF;
@@ -443,13 +474,4 @@ footer p {
 }
 .about .team-section .person-3 {
   margin-bottom: 9.5rem;
-}
-footer {
-  background-color: #FFF6EF;
-  text-align: center;
-}
-footer p {
-  padding-top: 5rem;
-  padding-bottom: 4rem;
-  color: #FC6767;
 }

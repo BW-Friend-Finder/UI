@@ -20,6 +20,9 @@
         margin-left: 5rem;
         h1 {
           color: @bluish;
+          @media @mobile {
+            line-height: 6rem;
+          }
         }
         span {
           color: @reddish;
@@ -104,9 +107,15 @@
   .section-2 {
     background-color: @bluish-background;
     padding: 10rem 15rem;
+    @media @mobile {
+      padding: 10rem 3rem;
+    }
     .group-1 {
       display: flex;
       position: relative;
+      @media @mobile {
+        display: none;
+      }
       .subgroup-1 {
         position: absolute;
         top: 2rem;
@@ -129,22 +138,24 @@
         left: 10rem;
         top: 2rem;
       }
-    }
+    } //group-1
     h1 {
       color: @whitish;
+      @media @mobile {
+        line-height: 6rem;
+        margin-bottom: 2rem;
+      }
     }
     h3 {
       color: @whitish;
     }
+    .group-2 {
+      display: none;
+      @media @mobile {
+        display: block;
+        text-align: center;
+        width: 100%;
+      }
+    }
   } //section-2
 } //home
-
-footer {
-  background-color: @tannish-background;
-  text-align: center;
-  p {
-    padding-top: 5rem;
-    padding-bottom: 4rem;
-    color: @reddish;
-  }
-} //footer
