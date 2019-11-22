@@ -1,4 +1,11 @@
 .home {
+
+  @media @mobile {
+    .remove-on-mobile {
+      display: none;
+    }
+  }
+
   .content-header {
 
     background-color: @tannish-background;
@@ -19,6 +26,10 @@
         }
         h3 {
           color: @bluish;
+
+          @media @mobile {
+            margin-top: 2rem;
+          }
         }
         button {
           background-color: @reddish;
@@ -31,8 +42,16 @@
             background-color: @bluish;
             color: black;
           }
+
+          @media @mobile {
+            margin-top: 2rem;
+          }
         }
-      }
+        @media @mobile {
+          text-align: center;
+          vertical-align: center;
+        }
+      } //header-intro-text
       .header-intro-img {
         margin-top: 8rem;
         margin-right: 3rem;
@@ -56,6 +75,9 @@
         }
         p {
           margin-bottom: 5rem;
+          @media @mobile {
+            width: 100%;
+          }
         }
       }
       .text-content-2 {
@@ -63,8 +85,19 @@
         h2 {
           margin-bottom: 1rem;
         }
+        p {
+          @media @mobile {
+            width: 100%;
+          }
+        }
       }
-
+      @media @mobile {
+        margin: 0 auto;
+        text-align: center;
+      }
+    } //text-content
+    @media @mobile {
+      padding: 10rem 2rem;
     }
   } //section-1
 

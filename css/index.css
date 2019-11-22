@@ -170,12 +170,40 @@ h3 {
   margin-left: 5rem;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .page-nav .logo {
+    margin: 0 auto;
+  }
+}
 .page-nav .nav-items {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .page-nav .nav-items {
+    margin: 0 auto;
+  }
+}
 .page-nav .nav-items a {
   margin-right: 5rem;
+}
+@media (max-width: 500px) {
+  .page-nav .nav-items a {
+    margin: 2rem 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .page-nav {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 500px) {
+  .home .remove-on-mobile {
+    display: none;
+  }
 }
 .home .content-header {
   background-color: #FFF6EF;
@@ -199,6 +227,11 @@ h3 {
 .home .content-header .header-intro .header-intro-text h3 {
   color: #3A7BD5;
 }
+@media (max-width: 500px) {
+  .home .content-header .header-intro .header-intro-text h3 {
+    margin-top: 2rem;
+  }
+}
 .home .content-header .header-intro .header-intro-text button {
   background-color: #FC6767;
   color: #FFF6EF;
@@ -210,6 +243,17 @@ h3 {
 .home .content-header .header-intro .header-intro-text button:hover {
   background-color: #3A7BD5;
   color: black;
+}
+@media (max-width: 500px) {
+  .home .content-header .header-intro .header-intro-text button {
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .home .content-header .header-intro .header-intro-text {
+    text-align: center;
+    vertical-align: center;
+  }
 }
 .home .content-header .header-intro .header-intro-img {
   margin-top: 8rem;
@@ -239,6 +283,11 @@ h3 {
 .home .section-1 .text-content .text-content-1 p {
   margin-bottom: 5rem;
 }
+@media (max-width: 500px) {
+  .home .section-1 .text-content .text-content-1 p {
+    width: 100%;
+  }
+}
 .home .section-1 .text-content .text-content-2 h2 {
   color: #FC6767;
 }
@@ -248,6 +297,22 @@ h3 {
 }
 .home .section-1 .text-content .text-content-2 h2 {
   margin-bottom: 1rem;
+}
+@media (max-width: 500px) {
+  .home .section-1 .text-content .text-content-2 p {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home .section-1 .text-content {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .home .section-1 {
+    padding: 10rem 2rem;
+  }
 }
 .home .section-2 {
   background-color: #3A7BD5;
